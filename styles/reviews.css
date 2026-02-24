@@ -1,0 +1,117 @@
+.reviews-sec{
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(360deg, rgb(238, 244, 244), rgb(238, 244, 244), rgb(110, 177, 219),rgb(110, 177, 219),rgb(238, 244, 244));
+}
+.reviews-inner{
+    width: 90%;
+    margin: 0 auto;
+}
+.reviews-con{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review{
+    width: 42%;
+    background-color: rgb(180, 200, 207);
+    justify-items: center;
+    padding: 2rem;
+}
+.review-ratings{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.review-rating{
+    width: 18px;
+    height: 18px;
+}
+.reviewer{
+    font-weight: bold;
+}
+
+
+.appreciation-sec{
+    width: 100%;
+    padding-top: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.appreciation-post{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.appreciation-header{
+    font-weight: bold;
+    font-size: 15px;
+}
+.appreciation-img-con{
+    width: 30%;
+    height: 15rem;
+    background-color: blue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.appreciation-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 930px) {
+    .reviews-con{
+        gap: 1rem;       
+    }
+}
+@media (max-width: 570px) {
+    .reviews-con{
+        flex-direction: column;
+    }
+    .review{
+        width: 80%;
+        margin:  0 auto;
+    }
+    .appreciation-sec{
+        position: relative;
+        padding-top: 3rem;
+    }
+    .appreciation-post{
+        background-color: rgba(18, 95, 118, 0.5);
+        backdrop-filter: blur(10px);
+        width: 70%;
+        padding: 1rem;
+        z-index: 1;
+        color: white;
+        border-radius: 1rem;
+        box-shadow: 20px 20px 5px 5px rgb(78, 117, 130, 0.4);
+    }
+    .appreciation-img-con{
+        position: absolute;
+        width: 60%;
+        height: 90%;
+        top: 10px;
+        right: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .appreciation-sec{
+        justify-content: normal;
+    }
+    .appreciation-img-con{
+        width: 80%;
+        height: 70%;
+    }
+    .appreciation-post{
+        width: 80%;
+    }
+}
